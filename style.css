@@ -1,0 +1,855 @@
+*{
+    padding: 0%;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: Verdana;
+
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    background: #172c41;
+
+}
+
+label.logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    padding: 0 100px;
+    line-height: 80px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+
+}
+
+nav a{
+    color:white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
+a.active,a:hover{
+    border: 1px solid white;
+    transition: .5s;
+}
+
+nav #icon{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:1048px){
+    label.logo{
+        font-size: 32px;
+        padding-left: 60px;
+
+    }
+}
+
+nav ul{
+    margin-right: 20px;
+
+}
+
+nav a{
+    font-size: 17px;
+}
+
+@media (max-width:909px){
+    nav #icon{
+        display: block;
+    }
+
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2f3640;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+
+    }
+
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px
+    }
+
+    nav a{
+        font-size: 20px;
+        
+    }
+
+    a.active,a:hover{
+        border:none;
+        color: #3498bd;
+    }
+
+    nav ul.show{
+        left:0;
+    }
+}
+
+section{
+
+    background: url(images/bg.jpg) no-repeat;
+    background-size: cover;
+    height: calc(150vh - 100px);
+
+
+}
+
+.indexbg 
+
+{
+
+    background: url(images/bg2.jpg) no-repeat;
+    background-size: cover;
+    height: calc(150vh - 100px);
+
+
+}
+
+.biodatabg
+{
+    background: url(images/bg.jpg) no-repeat;
+    background-size: cover;
+    height: calc(180vh - 100px); 
+}
+
+.objectivebg
+
+{
+    background: url(images/bg.jpg) no-repeat;
+    background-size: cover;
+    height: calc(165vh - 100px); 
+}
+
+
+.familybg
+{
+
+    background: url(images/bg.jpg) no-repeat;
+    background-size: cover;
+    height: calc(250vh - 100px);
+
+
+}
+
+.gallerybg
+{
+
+    background: url(images/bg.jpg) no-repeat;
+    background-size: cover;
+    height: calc(170vh - 100px);
+
+
+}
+
+.sectionexperience
+
+{
+    background: url(images/bg.jpg) no-repeat;
+    background-size: cover;
+    height: calc(290vh - 100px);
+}
+.educationbg
+
+{
+    background: url(images/bg.jpg) no-repeat;
+    background-size: cover;
+    height: calc(400vh - 100px);
+}
+
+.skillsbg
+
+{
+    background: url(images/bg.jpg) no-repeat;
+    background-size: cover;
+    height: calc(170vh - 100px);
+}
+
+
+
+.zul8{
+
+    float: right;
+    margin-right: 50px;
+    margin: 50px;
+    width: 150px;
+    height: 190px;
+    
+}
+
+
+
+.aboutme1
+{
+    font-size: 45px;
+    line-height: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 5%;
+    color: #021931;
+    
+    
+}
+
+.aboutme2
+{
+    font-size: 28px;
+    line-height: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 3%;
+    
+    
+    
+}
+
+.biodata1
+{
+    font-size: 45px;
+    line-height: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 17%;
+    color: #0e5eaf;
+    
+}
+
+
+.biodata2
+{
+    font-size: 25px;
+    line-height: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    line-height: 1.6;
+    text-align: justify;
+    
+    
+   
+}
+
+.zul9
+
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 340px;
+    height: 420px;
+    padding-top: 2%;
+    border: #0e5eaf;
+    
+}
+
+.objective1
+{
+    font-size: 45px;
+    line-height: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-left: 9%;
+    padding-right: 9%;
+    padding-top: 10%;
+    color: #0e5eaf;
+    
+}
+
+.objective2
+{
+    font-size: 25px;
+    line-height: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-left: 9%;
+    padding-right: 9%;
+    padding-top: 3%;
+    line-height: 1.6;
+    text-align: justify;
+    
+   
+    
+   
+}
+
+.objective3
+{
+    background-color: rgb(84, 207, 197);
+    
+}
+.experience1
+{
+    font-size: 45px;
+    line-height: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+    color: #0e5eaf;
+    
+    
+}
+
+.experience2
+{
+    font-size: 28px;
+    line-height: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    
+}
+
+.experience3
+{
+    font-size: 22px;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+     
+}
+
+
+.diy1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+    
+}
+
+
+.myfamily1
+{
+    display: flex;
+    width: 380px;
+    height: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3%;
+    
+    
+    
+}
+
+.family1
+{
+    font-size: 45px;
+    line-height: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 17%;
+    color: #0e5eaf;
+    
+    
+}
+
+.family2
+{
+    font-size: 24px;
+    line-height: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 3%;
+    text-align: justify;
+    line-height: 1.6;
+    
+    
+    
+}
+
+.family3
+{
+    
+
+    font-size: 28px;
+    line-height: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 3%;
+    text-align: center;
+    line-height: 1.6;
+    
+}
+
+.family4
+{
+    background-color: aqua;
+    text-decoration: underline;
+}
+
+.tableeducation
+{
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    box-shadow: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+table,th,td
+{
+    width: 800;
+    margin: auto;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;  
+    border: 1px solid black;
+    
+    
+}
+
+tr:nth-child(1)
+{
+    background-color: #0e82ac;
+
+}
+
+tr:nth-child(2)
+{
+    background-color: #74c0db;
+
+}
+tr:nth-child(3)
+{
+    background-color: #74c0db;
+
+}
+
+tr:nth-child(4)
+{
+    background-color: #74c0db;
+
+}
+
+tr:nth-child(5)
+{
+    background-color: #74c0db;
+
+}
+
+tr:nth-child(6)
+{
+    background-color: #74c0db;
+
+}
+
+.myeducation1
+{
+    display: block;
+    width: 500px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3%;
+    
+    
+    
+}
+.education1
+{
+    font-size: 45px;
+    line-height: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 17%;
+    color: #0e5eaf;
+    
+    
+}
+
+.education2
+{
+    font-size: 28px;
+    line-height: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 3%;
+    text-align: justify;
+    line-height: 1.6;
+    
+    
+    
+}
+
+.education3
+{
+    
+
+    font-size: 28px;
+    line-height: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 3%;
+    text-align: center;
+    line-height: 1.6;
+    padding-bottom: 1.5%;
+    
+}
+
+.skills1
+{
+    font-size: 45px;
+    line-height: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-left: 15%;
+    padding-top: 17%;
+    color: #0e5eaf;
+    
+    
+}
+
+.skills2
+{
+    font-size: 28px;
+    line-height: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 3%;
+    text-align: justify;
+    line-height: 1;
+    
+    
+    
+}
+
+.skills3
+{
+    
+
+    font-size: 28px;
+    line-height: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 3%;
+    text-align: center;
+    line-height: 1.6;
+    padding-bottom: 1.5%;
+    
+}
+
+.skills4
+{
+    font-size: 35px;
+    line-height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 3%;
+    text-align: justify;
+    color: rgb(33, 147, 201);
+    
+}
+
+.skills5
+{
+    font-size: 35px;
+    line-height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 3%;
+    text-align: justify;
+    color: rgb(33, 147, 201);
+    
+}
+
+
+.tableskills
+{
+    padding-top: 1%;
+    padding-left: 15%;
+   
+    
+    
+
+}
+.skills-bar
+{
+    width: 320px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px 30px;
+    box-shadow: 5px 5px 10ox rgba(0,0,0,2);
+    place-items: center;
+    
+    
+    
+    
+}
+
+.skills-bar .bar
+
+{
+    margin: 20px 0;
+}
+
+.skills-bar .bar:first-child
+{
+    margin-top: 0px;
+
+}
+
+.skills-bar .bar .info
+{
+    margin-bottom: 5px;
+}
+.skills-bar .bar .info span
+{
+    font-size: 17px;
+    font-weight: 500;
+    opacity: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+
+
+}
+
+@keyframes showText {
+    100%{
+        opacity: 1;
+    }
+   
+}
+
+.skills-bar .bar .progress-line
+{
+    height: 10px;
+    width:100%;
+    background: #f0f0f0;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05),
+                      0px 1px 1px rgba(255,255,255,255.08);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+                
+}
+
+.bar .progress-line span
+{
+    height:100%;
+    width:80%;
+    background: #245fce;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+
+}
+
+.progress-line.bahasamelayu span
+{
+    width: 100%;
+}
+
+.progress-line.english span 
+{
+    width: 75%;
+}
+
+.progress-line.arabic span
+{
+    width: 60%;
+}
+
+@keyframes animate
+{
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+.bar .progress-line span::before
+{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+}
+
+.bar .progress-line span::after
+{
+    position: absolute;
+  
+    right: 0;
+    top: -28px;
+    color: #fff;
+    background: #000;
+    padding: 1px 8px;
+    border-radius: 3px;
+    
+}
+
+
+.bar .progress-line.bahasamelayu span::after
+{
+    content: "100%";
+}
+
+.bar .progress-line.english span::after
+{
+    content: "75%";
+}
+
+.bar .progress-line.arabic span::after
+{
+    content: "60%";
+}
+
+.imggallery
+{
+    padding-top: 20px;
+    padding-left: 25%;
+    width: 80%;
+}
+
+.gallery1
+{
+    font-size: 45px;
+    line-height: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 18%;
+    color: #0e5eaf;
+        
+}
+    
+    
+
+
+.contactme1
+{
+    font-size: 45px;
+    line-height: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 17%;
+    color: #0e5eaf;
+    
+    
+}
+
+.contactme2
+{
+    font-size: 28px;
+    line-height: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 3%;
+    
+    
+    
+}
+
+.iconcontact
+{
+    font-size: 24px;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    line-height: 2;
+    text-align: center;
+    padding-top: 3%;
+    
+    
+}
+
+.map
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+}
+
+
+.outer-footer
+{
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    background-color: #2f3640;
+}
